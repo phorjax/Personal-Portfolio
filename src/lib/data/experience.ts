@@ -13,11 +13,11 @@ export const items: Array<Experience> = [
 		type: 'Software Engineering',
 		location: 'Home',
 		period: { from: new Date(2023, 9, 1) },
-		skills: getSkills('html','css','angular','js', 'java'),
+		skills: getSkills('html','css','angular','js', 'java', 'javalin'),
 		name: 'Software Engineer Associate',
 		color: 'orange',
 		links: [],
-		logo: Assets.revature,
+		logo: Assets.Revature,
 		shortDescription: 'Software solutions for Revature clients.'
 	},
 	{
@@ -31,10 +31,10 @@ export const items: Array<Experience> = [
 		location: 'Home',
 		period: { from: new Date(2023, 9, 1) },
 		skills: getSkills('html', 'css', 'bootstrap', 'tailwind', 'mui', 'js', 'reactjs', 'angular', 'ts', 'python', 'flask', 'c#', '.net', 'postgreSQL'),
-		name: 'Software Engineer Associate',
+		name: 'Software Developer',
 		color: 'mediumaquamarine',
 		links: [],
-		logo: Assets.remotasks,
+		logo: Assets.Remotasks,
 		shortDescription: 'New era of AI models and development.'
 	},
 	{
@@ -66,7 +66,7 @@ export const items: Array<Experience> = [
 		name: 'Mentor',
 		color: 'green',
 		links: [],
-		logo: Assets.geeks,
+		logo: Assets.Geeks,
 		shortDescription: 'Bootcamp Mentor'
 	}
 ];
