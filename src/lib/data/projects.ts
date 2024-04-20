@@ -1,6 +1,17 @@
 import Assets from './assets';
 import { getSkills } from './skills';
 import type { Project } from '../types';
+import KalygoEN from '$lib/screenshots/Kalygo/kalygoEN.png';
+import KalygoFR from '$lib/screenshots/Kalygo/KalygoFR.png';
+import Dashboard from '$lib/screenshots/Kalygo/Dashboard.png';
+import login from '$lib/screenshots/Kalygo/login.png';
+import RCTRACKS from '$lib/screenshots/RCTRACKS/RCpage.png';
+import WaffleApps from '$lib/screenshots/stagewood/WaffleApps.png';
+import Login from '$lib/screenshots/stagewood/login.png';
+import Captcha from '$lib/screenshots/stagewood/Captcha.png';
+
+
+
 
 export const items: Array<Project> = [
 	{
@@ -18,6 +29,13 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('ts', 'tailwind', 'js', 'html'),
 		type: 'Software as a Service.',
+		screenshots: [
+			{ label: 'Kalygo in english', src: KalygoEN },
+			{ label: 'Kalygo in french', src: KalygoFR },
+			{ label: 'Dashboard to upload files and summarize them.', src: Dashboard },
+			{ label: 'Login with Google integration', src: login },
+
+		]
 	},
 	{
 		slug: 'RC TRACKS',
@@ -34,12 +52,15 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('ts', 'tailwind', ),
 		type: 'Website Landing Page',
+		screenshots: [
+			{ label: 'Hero Section', src: RCTRACKS },
+		]
 	},
 	{
 		slug: 'Stagewood Inc.',
 		color: 'palevioletred',
 		description:
-			`In this group project, I mainly worked on an internal software, the Navigation Bar and login UI and login integrations that are shared across all websites they own. The internal software was a tool built for the management of the company to be able to update information across all their websites and mobile applications without the need to code or have any techie knowledge. I worked on the UI of the platform, created API endpoints on the backend with .NET, and setted up MongoDB databases to push information from the backend. As this is an internal tool of the company, I can't show it to the world, but I can show the Navigation Bar and login UI with the Google, Facebook and Apple login integrations that I created and are shared across all websites this company owns. https://dev.tykbroker.com/`,
+			`In this group project, I mainly worked on an internal software called DataSync, the Navigation Bar, login UI, login integrations and login captcha. The login feature and the DataSync project are shared across all websites they own. The internal tool DataSync was a tool built for the management of the company to be able to update information across all their websites and mobile applications without the need to code or have any tech knowledge. I was the head of the project and worked on the UI of the platform, created API endpoints on the backend with .NET, and setted up MongoDB databases to push information from the backend. As this is an internal tool of the company, I can't show it to the world, but I can show the Navigation Bar, login UI with the Google, Facebook and Apple integrations that I created and are shared across all websites this company owns, as well as the login captcha modal. https://dev.tykbroker.com/`,
 		shortDescription:
 			'Stagewood Inc. TykBroker project.',
 		links: [{ to: 'https://stagewood.com/', label: 'Stagewood Inc.' }],
@@ -50,6 +71,12 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('ts', 'mui', 'js', 'c#', '.net', 'azuredevops', 'mongodb', 'nextjs', 'reactjs'),
 		type: 'Software as a Service.',
+		screenshots: [
+			{ label: 'Dynamic Waffle apps', src: WaffleApps },
+			{ label: 'login', src: Login },
+			{ label: 'Captcha Modal', src: Captcha },
+
+		]
 	},
 	{
 		slug: 'Java Project',
@@ -62,10 +89,26 @@ export const items: Array<Project> = [
 		logo: Assets.Unknown,
 		name: 'Java Backend Project',
 		period: {
-			from: new Date(2023, 7, 1), to: new Date(2023, 10, 1)
+			from: new Date(2023, 7, 1), to: new Date(2023, 7, 15)
 		},
 		skills: getSkills('java', 'javalin', 'mysql'),
 		type: 'Personal Project',
+	},
+	{
+		slug: 'Portfolio',
+		color: 'cyan',
+		description:
+			`My personal portfolio website.`,
+		shortDescription:
+			'My personal portfolio website.',
+		links: [{ to: 'https://phorjax.github.io/myportfolio/', label: 'Github' }],
+		logo: Assets.Unknown,
+		name: 'Portfolio',
+		period: {
+			from: new Date(2024, 1, 1), to: new Date(2024, 2, 1)
+		},
+		skills: getSkills('html', 'css', 'js', 'ts'),
+		type: 'Website',
 	}
 ];
 
