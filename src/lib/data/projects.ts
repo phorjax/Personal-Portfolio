@@ -9,8 +9,11 @@ import RCTRACKS from '$lib/screenshots/RCTRACKS/RCpage.png';
 import WaffleApps from '$lib/screenshots/stagewood/WaffleApps.png';
 import Login from '$lib/screenshots/stagewood/login.png';
 import Captcha from '$lib/screenshots/stagewood/Captcha.png';
-
-
+import Screenshot1 from '$lib/screenshots/AMtrust/Screenshot1.png';
+import Screenshot2 from '$lib/screenshots/AMtrust/Screenshot2.png';
+import gighive1 from '$lib/screenshots/GigHive/gighive.png';
+import gighive2 from '$lib/screenshots/GigHive/Screenshot1.png';
+import gighive3 from '$lib/screenshots/GigHive/Screenshot2.png';
 
 
 export const items: Array<Project> = [
@@ -80,7 +83,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'Java Project',
-		color: 'mediumorchid',
+		color: 'yellow',
 		description:
 			`This is a personal project I decided to make to practice and showcase my abilities as a backend developer, so it is not a full stack project like the others. For this project, I utilized all the knowledge I have in Java to create a hypothetical backend for a social media app, where users can sign up, log in, send and receive messages, and post comments. I also added test cases and did everything within the javalin framework.`,
 		shortDescription:
@@ -102,13 +105,74 @@ export const items: Array<Project> = [
 		shortDescription:
 			'My personal portfolio website.',
 		links: [{ to: 'https://phorjax.github.io/myportfolio/', label: 'Github' }],
-		logo: Assets.Unknown,
+		logo: Assets.Portfolio,
 		name: 'Portfolio',
 		period: {
 			from: new Date(2024, 1, 1), to: new Date(2024, 2, 1)
 		},
 		skills: getSkills('html', 'css', 'js', 'ts'),
 		type: 'Website',
+	},
+	{
+		slug: 'Website',
+		color: 'lightsteelblue',
+		description:
+			`Company website requested by a client.`,
+		shortDescription:
+			'Company website requested by a client, entirely developed and designed by me.',
+		links: [{ to: 'https://amtrust5.wordpress.com/', label: 'Website' }],
+		logo: Assets.AMtrust,
+		name: 'AMtrust Financial & Insurance Services',
+		period: {
+			from: new Date(2024, 5, 1), to: new Date(2024, 5, 8)
+		},
+		skills: getSkills('html', 'css', 'js', 'wordpress'),
+		type: 'Website',
+		screenshots: [
+			{ label: 'Website page', src: Screenshot1 },
+			{ label: 'Website main page', src: Screenshot2 },
+
+		]
+	},
+	{
+		slug: 'GigHive',
+		color: 'mediumorchid',
+		description:
+			`A middleman app for venues and musicians created from scratch, where venues and musicians can sign up and create
+			their profiles as venues or artists and create events or attend events, utilizing JS and Python. Pitched for our final
+			project.`,
+		shortDescription:
+			'Middle man application for venues and artists.',
+		links: [{ to: 'https://github.com/phorjax/GigHive-Project', label: 'Github' }],
+		logo: Assets.GigHive,
+		name: 'GigHive',
+		period: {
+			from: new Date(2023, 3, 1), to: new Date(2023, 4, 12)
+		},
+		skills: getSkills('html', 'css', 'js', 'bootstrap', 'flask', 'postgreSQL', 'python', 'jest', 'reactjs'),
+		type: 'Web application',
+		screenshots: [
+			{ label: 'Website page', src: gighive1 },
+			{ label: 'transition', src: gighive2 },
+			{ label: 'maps', src: gighive3 },
+
+		]
+	},
+	{
+		slug: 'Real State Website',
+		color: 'sienna',
+		description:
+			`AngularJS project needed for the ServiceNow training at Revature.`,
+		shortDescription:
+			'AngularJS project simulating a real state website.',
+		links: [{ to: 'https://github.com/phorjax/Rev-Project0', label: 'Github' }],
+		logo: Assets.RealEstate,
+		name: 'Real Estate Website',
+		period: {
+			from: new Date(2024, 0, 1), to: new Date(2024, 0, 15)
+		},
+		skills: getSkills('html', 'css', 'js', 'bootstrap', 'angular'),
+		type: 'Web application',
 	}
 ];
 

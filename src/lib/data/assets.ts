@@ -84,6 +84,11 @@ const Assets = {
 	RC: a('rclogo.png'),
 	NextJs: a('nextjs.png'),
 	Stagewood: a('stagewood.png'),
+	WordPress: a('wordpress.png'),
+	AMtrust: a('amtrust.png'),
+	Portfolio: a('portfolio.png'),
+	GigHive: a('gighive.png'),
+	RealEstate: a('realestate.png'),
 };
 
 export default Assets;
