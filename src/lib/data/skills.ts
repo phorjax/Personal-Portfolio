@@ -231,6 +231,15 @@ export const items = [
 		logo: Assets.WordPress,
 		name: 'WordPress',
 		category: 'design'
+	}),
+	defineSkill({
+		slug: 'figma',
+		color: 'green',
+		description:
+			'Figma is a collaborative web application for interface design, with additional offline features enabled by desktop applications for macOS and Windows.',
+		logo: Assets.Figma,
+		name: 'Figma',
+		category: 'design'
 	})
 ] as const;
 

@@ -89,6 +89,7 @@ const Assets = {
 	Portfolio: a('portfolio.png'),
 	GigHive: a('gighive.png'),
 	RealEstate: a('realestate.png'),
+	Figma: a('figma.jpeg'),
 };
 
 export default Assets;

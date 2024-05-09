@@ -53,7 +53,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date(2023, 3, 1), to: new Date(2023, 4, 1)
 		},
-		skills: getSkills('ts', 'tailwind', ),
+		skills: getSkills('ts', 'tailwind', 'figma'),
 		type: 'Website Landing Page',
 		screenshots: [
 			{ label: 'Hero Section', src: RCTRACKS },
@@ -72,7 +72,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date(2023, 7, 1), to: new Date(2023, 10, 1)
 		},
-		skills: getSkills('ts', 'mui', 'js', 'c#', '.net', 'azuredevops', 'mongodb', 'nextjs', 'reactjs'),
+		skills: getSkills('ts', 'mui', 'js', 'c#', '.net', 'azuredevops', 'mongodb', 'nextjs', 'reactjs', 'figma'),
 		type: 'Software as a Service.',
 		screenshots: [
 			{ label: 'Dynamic Waffle apps', src: WaffleApps },
@@ -126,7 +126,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date(2024, 5, 1), to: new Date(2024, 5, 8)
 		},
-		skills: getSkills('html', 'css', 'js', 'wordpress'),
+		skills: getSkills('html', 'css', 'js', 'wordpress', 'figma'),
 		type: 'Website',
 		screenshots: [
 			{ label: 'Website page', src: Screenshot1 },
@@ -150,7 +150,7 @@ export const items: Array<Project> = [
 			from: new Date(2023, 3, 1), to: new Date(2023, 4, 12)
 		},
 		skills: getSkills('html', 'css', 'js', 'bootstrap', 'flask', 'postgreSQL', 'python', 'jest', 'reactjs'),
-		type: 'Web application',
+		type: 'Personal Project',
 		screenshots: [
 			{ label: 'Website page', src: gighive1 },
 			{ label: 'transition', src: gighive2 },
@@ -172,7 +172,7 @@ export const items: Array<Project> = [
 			from: new Date(2024, 0, 1), to: new Date(2024, 0, 15)
 		},
 		skills: getSkills('html', 'css', 'js', 'bootstrap', 'angular'),
-		type: 'Web application',
+		type: 'Personal Project',
 	}
 ];
 
